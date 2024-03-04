@@ -1,0 +1,16 @@
+{
+  "extends": ["../../packages/linting-config/master-config.json"],
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "performance": {
+        "noAccumulatingSpread": "off"
+      }
+    }
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "ignore": ["./vendor/**", ".gitignore", ".watchmanconfig", "biome.json"]
+  }
+}

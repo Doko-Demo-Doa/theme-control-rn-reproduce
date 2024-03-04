@@ -1,0 +1,43 @@
+{
+  "name": "thecryptoapp-react",
+  "description": "Monorepo for TheCryptoApp, includes web, desktop and mobile apps.",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:web": "turbo run dev --filter=web",
+    "dev:ios": "turbo run ios --filter=thecryptoapp-mobile",
+    "dev:android": "turbo run android --filter=thecryptoapp-mobile",
+    "test:mobile": "turbo run test:esm --filter=thecryptoapp-mobile",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "latest",
+    "@thecryptoapp/linting-config": "*",
+    "@thecryptoapp/typescript-config": "*",
+    "prettier": "^3.2.4",
+    "tsup": "^8.0.1",
+    "turbo": "^1.12.1"
+  },
+  "resolutions": {
+    "@tanstack/react-query": "^5.17.19"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "keywords": [
+    "pnpm",
+    "turbo",
+    "react-native",
+    "@rnx-kit"
+  ],
+  "packageManager": "yarn@4.0.2",
+  "dependencies": {
+    "zustand": "^4.5.0"
+  }
+}

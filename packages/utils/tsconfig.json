@@ -1,0 +1,12 @@
+{
+  "extends": "@thecryptoapp/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "declaration": false,
+    "declarationMap": false,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "build"],
+}

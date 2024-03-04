@@ -1,0 +1,7 @@
+{
+  "extends": ["../../packages/linting-config/master-config.json"],
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "@thecryptoapp/typescript-config/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@tanstack/react-query": ["node_modules/@tanstack/react-query"],
+    },
+  },
+}
